@@ -1,5 +1,2 @@
 require "bitcoin_ticker/version"
-
-module BitcoinTicker
-  # Your code goes here...
-end
+require "bitcoin_ticker/client"
