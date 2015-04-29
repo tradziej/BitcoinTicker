@@ -36,6 +36,7 @@ shared_examples "common for #ticker method" do |bitcurrency, currency|
   context "when correct arrguments" do
     it "returns Rate object" do
       allow_any_instance_of(BitcoinTicker::Client).to receive(:get).and_return({code: 200, body: {}})
+      subject.stub(:normalize_api_response) { {} }
       expect(subject.ticker(bitcurrency, currency)).to be_kind_of(BitcoinTicker::Rate)
     end
   end
