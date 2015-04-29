@@ -34,7 +34,7 @@ describe BitcoinTicker::Bitmarket do
   end
 
   describe "#ticker" do
-    include_examples "common for #ticker method"
+    include_examples "common for #ticker method", :btc, :pln
 
     it "returns correct Bitcoin rates" do
       stub_request(:get, 'https://www.bitmarket.pl/json/BTCPLN/ticker.json')

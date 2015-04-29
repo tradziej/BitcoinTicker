@@ -34,7 +34,7 @@ describe BitcoinTicker::Bitcurex do
   end
 
   describe "#ticker" do
-    include_examples "common for #ticker method"
+    include_examples "common for #ticker method", :btc, :usd
 
     it "returns correct Bitcoin rates" do
       stub_request(:get, 'https://bitcurex.com/api/usd/ticker.json')

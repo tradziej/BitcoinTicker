@@ -23,6 +23,6 @@ describe BitcoinTicker::Exchange do
   it { is_expected.to respond_to(:ticker).with(2).arguments }
 
   describe "ticker" do
-    include_examples "common for #ticker method"
+    include_examples "common for #ticker method", :btc, :pln
   end
 end
