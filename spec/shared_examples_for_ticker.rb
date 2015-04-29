@@ -14,7 +14,7 @@ shared_examples "common for #ticker method" do |bitcurrency, currency|
   context "when incorrect arrguments" do
     context "and bitcurrency is incorrect" do
       it "returns BitcoinTicker::UnsupportedBitcurrency error with message" do
-        unsapported_bitcurrency = :doge
+        unsapported_bitcurrency = :fake_bitcurrency
         expect { subject.ticker(unsapported_bitcurrency, currency) }.to(
           raise_error(BitcoinTicker::UnsupportedBitcurrency,
             "#{unsapported_bitcurrency} is not supported")
@@ -24,7 +24,7 @@ shared_examples "common for #ticker method" do |bitcurrency, currency|
 
     context "and currency is incorrect" do
       it "returns BitcoinTicker::UnsupportedCurrency error" do
-        unsapported_currency = :gbp
+        unsapported_currency = :fake_currency
         expect { subject.ticker(bitcurrency, unsapported_currency) }.to(
           raise_error(BitcoinTicker::UnsupportedCurrency,
             "#{unsapported_currency} is not supported")
