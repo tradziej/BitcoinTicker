@@ -1,5 +1,7 @@
 # BitcoinTicker
 
+[![Build Status](https://travis-ci.org/tradziej/BitcoinTicker.svg)](https://travis-ci.org/tradziej/BitcoinTicker)
+
 Wrapper for cryptocurrency (e.g. Bitcoin, Litecoin) price tickers.
 
 Currently gem support following exchanges:
