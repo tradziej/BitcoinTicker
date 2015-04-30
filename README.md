@@ -1,6 +1,7 @@
 # BitcoinTicker
 
 [![Build Status](https://travis-ci.org/tradziej/BitcoinTicker.svg)](https://travis-ci.org/tradziej/BitcoinTicker)
+[![Gem Version](https://badge.fury.io/rb/bitcoin_ticker.svg)](http://badge.fury.io/rb/bitcoin_ticker)
 
 Wrapper for cryptocurrency (e.g. Bitcoin, Litecoin) price tickers.
 
